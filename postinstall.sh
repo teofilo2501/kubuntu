@@ -31,7 +31,7 @@ sudo apt-get update
 sudo apt-get install teamviewer -y 
 
 echo "install sublime-text"
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo sh -c "echo 'deb https://download.sublimetext.com/ apt/stable/' >> /etc/apt/sources.list.d/sublime-text.list"
 sudo apt-get update
 sudo apt-get install sublime-text -y
 
