@@ -26,9 +26,10 @@ rm -f packages.microsoft.gpg
 
 #kodi
 sudo apt-get install software-properties-common -y
-sudo add-apt-repository ppa:team-xbmc/ppa
+sudo add-apt-repository ppa:team-xbmc/ppa -y
 
 #download mega
+
 wget https://mega.nz/linux/MEGAsync/xUbuntu_$(lsb_release -rs)/amd64/megasync-xUbuntu_$(lsb_release -rs)_amd64.deb -O megasync.deb
 wget https://mega.nz/linux/MEGAsync/xUbuntu_$(lsb_release -rs)/amd64/dolphin-megasync-xUbuntu_$(lsb_release -rs)_amd64.deb -O dolphin-megasync.deb
 
@@ -38,5 +39,6 @@ sudo apt update
 sudo apt full-upgrade -y
 sudo dpkg -i megasync.deb
 sudo dpkg -i dolphin-megasync.deb
-sudo apt install -f -y wine64 traceroute mc htop iftop iotop remmina remmina-plugin-rdp gnome-boxes timeshift kodi code sublime-text teamviewer anydesk google-chrome-stable
+sudo apt -f -y install
+sudo apt install -y wine64 traceroute mc htop iftop iotop remmina remmina-plugin-rdp gnome-boxes timeshift kodi code sublime-text teamviewer anydesk google-chrome-stable
 
