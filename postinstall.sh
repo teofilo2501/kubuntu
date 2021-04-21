@@ -15,7 +15,7 @@ echo "install mega.nz"
 wget https://mega.nz/linux/MEGAsync/xUbuntu_$(lsb_release -rs)/amd64/megasync-xUbuntu_$(lsb_release -rs)_amd64.deb -O megasync.deb
 wget https://mega.nz/linux/MEGAsync/xUbuntu_$(lsb_release -rs)/amd64/dolphin-megasync-xUbuntu_$(lsb_release -rs)_amd64.deb -O dolphin-megasync.deb
 sudo dpkg -i megasync.deb
-sudo dpkg -i dolpih-megasync.deb
+sudo dpkg -i dolphin-megasync.deb
 sudo apt-get install -f -y
 
 echo "install anydesk"
