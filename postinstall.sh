@@ -21,8 +21,8 @@ sudo apt-get install -f -y
 echo "install anydesk"
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
 sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
-apt update
-apt install anydesk -y
+sudo apt update
+sudo apt install anydesk -y
 
 echo "install teamviewer"
 sudo sh -c "echo 'deb http://linux.teamviewer.com/deb stable main' >> /etc/apt/sources.list.d/teamviewer.list"
