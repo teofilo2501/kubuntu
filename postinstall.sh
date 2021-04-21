@@ -15,12 +15,12 @@ echo "install mega.nz"
 wget https://mega.nz/linux/MEGAsync/xUbuntu_$(lsb_release -rs)/amd64/megasync-xUbuntu_$(lsb_release -rs)_amd64.deb -O megasync.deb
 wget https://mega.nz/linux/MEGAsync/xUbuntu_$(lsb_release -rs)/amd64/dolphin-megasync-xUbuntu_$(lsb_release -rs)_amd64.deb -O dolphin-megasync.deb
 sudo dpkg -i megasync.deb
-sudo dpkg -i nautilus-megasync.deb
+sudo dpkg -i dolpih-megasync.deb
 sudo apt-get install -f -y
 
 echo "install anydesk"
-wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | sudo apt-key add -
+sudo echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
 apt update
 apt install anydesk -y
 
