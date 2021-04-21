@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "initial full upgrade"
+sudo apt update
+sudo apt full-upgrade -y
+
 echo "install google chrome.."
 
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
